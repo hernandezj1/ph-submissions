@@ -411,10 +411,10 @@ range(1,16)
 ```
 
 <div class="alert alert-warning">
- En este ejemplo, entiendase esta pagina web, existe un error de doble clic en el cursor de siguiente y por lo tanto repite las entradas dos veces. Esta repetición se puede limpiar después con herramientas como Excel o OpenRefine o utilizando Python más complicado como un `if` para comparar las entradas y borrar las repetidas.
+ En este ejemplo, entiendase esta pagina web, existe un error de doble clic en el cursor de siguiente y por lo tanto repite las entradas dos veces. Esta repetición se puede limpiar después con herramientas como Excel/OpenRefine o utilizando Python más complicado como un `if` para comparar las entradas y borrar las repetidas. Este error no esta presente en otras paginas web.
 </div>
 
-El CSV abre como un documento normal en Microsoft Excel, Libreoffice o en editores de texto.
+El CSV abre como un documento normal en Microsoft Excel, LibreOffice o en editores de texto.
 
 ## Conclusión
 
