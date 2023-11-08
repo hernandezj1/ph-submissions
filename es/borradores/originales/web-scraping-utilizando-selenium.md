@@ -167,11 +167,11 @@ Para llegar a someter la palabra al buscador primero lo tenemos que encontrar y 
 
 Si usa su clic derecho encima del elemento de interés en este caso el buscador le debe salir la opción de **Inspect** (inspeccionar). Si le da clic a esta opción le va a salir un panel usualmente en su mano derecha del Código HTML de la página en cuestión. Este proceso suele variar dependiendo de su buscador pero esta estandarizado en los buscadores prominentes como Chrome, Firefox, y Edge.
 
-{% include figure.html filename="es-or-web-scraping-utilizando-selenium-01.png" alt="Visual description of figure image" caption="Figura 1. Caption text to display" %}
+{% include figure.html filename="es-or-web-scraping-utilizando-selenium-01.png" alt="Enseñando el panel que aparece al presionar el clicl-derecho en el elemento de interés " caption="Figura 1. Caption text to display" %}
 
 Panel de inspección:
 
-{% include figure.html filename="es-or-web-scraping-utilizando-selenium-02.png" alt="Visual description of figure image" caption="Figura 2. Caption text to display" %}
+{% include figure.html filename="es-or-web-scraping-utilizando-selenium-02.png" alt="Enseñando el panel de inspeccion que aparece cuando se le da clic a la opcion de Inspect/inspeccionar en el panel que aparece en la imagen anterior" caption="Figura 2. Caption text to display" %}
 
 Aquí usted puede notar que cada elemento en HTML suele tener unos atributos que nos permiten identificar y distinguir distintos elementos fácilmente. Por ejemplo, alugnos usan 'id' y otros usan, como en este caso, 'name'. Por lo tanto, sabemos que el buscador es el único elemento con el nombre 'query' lo cual lo hace facil de buscar con la siguiente línea: 
 
@@ -238,7 +238,7 @@ search_box.send_keys(Keys.RETURN)
 
 Y en vez de la página principal de Latipat debe estar viendo esta (sus resultados pueden ser distintos dependiendo de la fecha en la que corra esta programa):
 
-{% include figure.html filename="es-or-web-scraping-utilizando-selenium-03.png" alt="Visual description of figure image" caption="Figura 3. Caption text to display" %}
+{% include figure.html filename="es-or-web-scraping-utilizando-selenium-03.png" alt="Lista de resultados en LATIPAT una vez se ejecuta la busqueda" caption="Figura 3. Caption text to display" %}
 
 ### Integrando loops con búsqueda de elementos
 
@@ -256,7 +256,7 @@ Ahora vamos a extraer los títulos y los resúmenes de cada patente. Para hacer 
 
 Para acceder a la primera patente tenemos que verificar su XPath o camino y asignarle una variable. Esto lo va a hacer con el mismo panel que utilizamos para encontrar el identificador para la barra de búsqueda, pero ahora copiara el XPath del elemento directamente.
 
-{% include figure.html filename="es-or-web-scraping-utilizando-selenium-04.png" alt="Visual description of figure image" caption="Figura 4. Caption text to display" %}
+{% include figure.html filename="es-or-web-scraping-utilizando-selenium-04.png" alt="Demostrabdo como copiar el XPATh de un elemento" caption="Figura 4. Caption text to display" %}
 
 Para realizar esta búsqueda asignamos este XPath a una variable y después buscamos el elemento con el driver. Finalmente le damos click al link de la patente para entrar a la próxima página, la cual se puede ver en la imagen que sigue:
 
@@ -277,11 +277,11 @@ Con este metodo le damos click a el elemento `piblicacion1` con el XPath apropri
 
 Ahora identificaremos los elementos que queremos extraer de cada página de la patente (el `título` y el `resumen`):
 
-{% include figure.html filename="es-or-web-scraping-utilizando-selenium-05.png" alt="Visual description of figure image" caption="Figura 5. Caption text to display" %}
+{% include figure.html filename="es-or-web-scraping-utilizando-selenium-05.png" alt="Pagina de la patente individual y su descripcion" caption="Figura 5. Caption text to display" %}
 
 Al identificar los elementos que queremos, tenemos que copiar sus XPath en la misma manera que lo hicimos para el botón de la primera patente.
 
-{% include figure.html filename="es-or-web-scraping-utilizando-selenium-06.png" alt="Visual description of figure image" caption="Figura 6. Caption text to display" %}
+{% include figure.html filename="es-or-web-scraping-utilizando-selenium-06.png" alt="Segunda deostracion de la copia del XPATH" caption="Figura 6. Caption text to display" %}
 
 Los caminos se pueden identificar de la siguiente manera: 
 
