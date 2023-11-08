@@ -404,8 +404,15 @@ driver.close()
 
 La última línea del programa cierra el driver para no dejar el buscador automático corriendo. 
 
-Al final, este programa debe producir un documento `.csv` con los primeros 8 títulos y resúmenes de las patentes. Se producen solamente 8 aunque se pasa por el loop 16 veces porque la página web tiene un error de doble clic en el cursor de siguiente y repite las entradas dos veces. Esta repetición se puede limpiar después con herramientas como Excel o OpenRefine o utilizando Python más complicado como un `if` para comparar las entradas y borrar las repetidas.
+Al final, este programa debe producir un documento `.csv` con los primeros 8 títulos y resúmenes de las patentes. Para aumentar la cantidad de patentes raspadas simplemente cambie el ultimo numero del la funcion range: 
 
+```
+range(1,16)
+```
+
+<div class="alert alert-warning">
+ En este ejemplo, entiendase esta pagina web, existe un error de doble clic en el cursor de siguiente y por lo tanto repite las entradas dos veces. Esta repetición se puede limpiar después con herramientas como Excel o OpenRefine o utilizando Python más complicado como un `if` para comparar las entradas y borrar las repetidas.
+</div>
 El CSV abre como un documento normal en Microsoft Excel, Libreoffice o en editores de texto.
 
 ## Conclusión
