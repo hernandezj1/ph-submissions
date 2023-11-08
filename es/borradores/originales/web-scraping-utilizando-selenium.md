@@ -51,9 +51,11 @@ Pero si usted se encuentra con un proyecto que necesita datos de una página que
 
 ## Instalación de Selenium según tu browser
 
+Aunque es una gran herramienta, la instalación de __Selenium__ va a depender del browser que usted utilice, ya sea Chrome, Firefox, Edge, Internet Explorer, o Safari. Por lo tanto esta sección va a discutir los puntos comunes de la instalación e indicará cuando sea necesario hacer variaciones para cada browser. Es importante notar que estas variaciones solo occuren en la instalación ya que el resto del codígo es identicó en todas las implementaciones. 
+
 ### Instalacion en Python
 
-El primer paso para utilizar Selenium WebDriver es instalarlo en su ambiente de Python que usualmente se puede hacer con la siguiente línea en el terminal:
+Antes de hacer cambios dependiendo del browser que seleccione lo primero que debe hacer es es instalar __Selenium__ en su ambiente de Python que usualmente se puede hacer con la siguiente línea en el terminal:
 
 ```
 pip install selenium
@@ -72,7 +74,7 @@ from selenium import webdriver
 import csv
 ```
 
-En adición a estas dos líneas Selenium tiene muchos sub-paquetes que se utilizan en su implementación por lo que se recomienda que estas líneas también se corran al principio del documento para tener acceso a la funcionalidad básica completa de Selenium:
+En adición a estas dos líneas __Selenium__ tiene muchos sub-paquetes que se utilizan en su implementación por lo que se recomienda que estas líneas también se corran al principio del documento para tener acceso a la funcionalidad básica completa de Selenium:
 
 ```
 from selenium.webdriver.common.keys import Keys
@@ -86,13 +88,9 @@ from selenium.webdriver.support import expected_conditions as EC
 
 Todas estas no son usadas por el tutorial pero le permite la mayor flexibilidad en sus proyectos iniciales. Es importante saber que estamos usando las herramientas para usar Selenium con el browser Chrome y estas líneas cambiaran dependiendo del browser que utilice.
 
-### Selección de browser
-
-Como señalado anteriormente las opciones requeridas por su código depende del buscador que usted use para acceder a la página web. Por lo tanto, si usted usa Chrome, Firefox, Edge, Internet Explorer, o Safari. En la siguiente sección se explicarán los cambios que cada una de estas opciones lleva, pero estos cambios nada más ocurren en la preparación del código. Una vez esta preparación es terminada todo el código es idéntico, no importa que buscador se use para inicializar el proceso.
-
 ### Instalación del webdriver
 
-Una vez usted seleccione que buscador va a utilizar, tiene que descargar el driver específico (programa que inicializa la búsqueda automatizada) a ese buscador. Por ejemplo, para Chrome el driver especifico se conoce como Chromedriver y se descarga [aquí](https://chromedriver.chromium.org/downloads).
+Una vez usted seleccione que buscador va a utilizar y usted alla instalado el paquete __Selenium__ en Python, tiene que descargar el driver específico (programa que inicializa la búsqueda automatizada) a ese buscador. Por ejemplo, para Chrome el driver especifico se conoce como Chromedriver y se descarga [aquí](https://chromedriver.chromium.org/downloads).
 
 Para otra plataforma como Firefox se conoce como el geckodriver y se descarga [aquí](https://github.com/mozilla/geckodriver/releases).
 
