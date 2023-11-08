@@ -49,7 +49,7 @@ Es importante aclarar que para muchos proyectos no se necesita usar Selenium ya 
 
 Pero si usted se encuentra con un proyecto que necesita datos de una página que no ofrece un API o la descarga fácil, Selenium y otras herramientas de raspado web le permitirán continuar y cumplir sus metas.
 
-## Preparacion dependiendo el browser
+## Instalación de Selenium según tu browser
 
 ### Instalacion en Python
 
